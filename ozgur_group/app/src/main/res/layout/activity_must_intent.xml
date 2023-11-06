@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".must_intent"
+    android:background="@drawable/layout">
+
+    <Button
+        android:id="@+id/ur_info_but"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/info"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        app:backgroundTint="@null"/>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/radus_layout"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:background="@drawable/radus_layout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/must_ad_ekle_edit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radus_button"
+                android:gravity="center"
+                android:hint="Müşteri Adı Giriniz"
+                android:inputType="text"
+                android:textColor="#F5FCCD"
+                android:textColorHint="#F5FCCD" />
+
+            <Button
+                android:id="@+id/must_ekle_but"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/plus"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/radus_layout"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/must_text_view"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/radus_button"
+                android:drawableEnd="@drawable/ic_drop_arrow"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="Müşteri Seçiniz"
+                android:textColor="#F5FCCD"
+                android:textColorHint="#F5FCCD" />
+
+            <Button
+                android:id="@+id/must_sil_but"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/delete"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

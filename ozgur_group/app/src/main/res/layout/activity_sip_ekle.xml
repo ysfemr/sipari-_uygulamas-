@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sip_ekle"
+    android:background="@drawable/layout">
+
+    <Button
+        android:id="@+id/sip_ekle_info_but"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/info"
+        app:backgroundTint="@null"
+        android:layout_alignRight="@id/sip_ekle_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/sip_ekle_layout"
+        android:layout_width="399dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/radus_layout"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sip_ekle_info_but">
+
+        <TextView
+            android:id="@+id/set_musteri_text"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radus_button"
+            android:drawableEnd="@drawable/ic_drop_arrow"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Müşteri Seçiniz"
+            android:padding="12dp"
+            android:textColor="#F5FCCD"
+            android:textColorHint="#F5FCCD" />
+
+        <LinearLayout
+            android:layout_width="399dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radus_layout_acik"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/set_urun_text"
+                android:layout_width="133dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/radus_button"
+                android:drawableEnd="@drawable/ic_drop_arrow"
+
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="Ürün Seçiniz"
+                android:padding="12dp"
+                android:textColor="#F5FCCD"
+                android:textColorHint="#F5FCCD"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/set_cesit_text"
+                android:layout_width="133dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/radus_button"
+                android:drawableEnd="@drawable/ic_drop_arrow"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="Ürün Çeşit Seçiniz"
+                android:padding="12dp"
+                android:textColor="#F5FCCD"
+                android:textColorHint="#F5FCCD"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/set_olcu_text"
+                android:layout_width="133dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:background="@drawable/radus_button"
+                android:drawableEnd="@drawable/ic_drop_arrow"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="Ürün Ölçü Seçiniz"
+                android:padding="12dp"
+                android:textColor="#F5FCCD"
+                app:backgroundTint="@null"
+                android:textColorHint="#F5FCCD" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/urun_adet_mik_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radus_button"
+            android:ems="10"
+            android:enabled="true"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Adet Miktarını Giriniz"
+            android:inputType="text"
+            android:numeric="signed"
+            android:textAlignment="center"
+            android:textColor="#F5FCCD"
+            android:textColorHint="#F5FCCD" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/radus_layout_acik"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ucret_check"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radus_button"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Ücret Alınmadı"
+                android:textColor="#F5FCCD"
+                app:backgroundTint="@null" />
+
+            <CheckBox
+                android:id="@+id/teslim_check"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radus_button"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Teslim Edilmedi"
+                android:textColor="#F5FCCD"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ekle_but"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/radus_button"
+            android:foregroundGravity="bottom"
+            android:text="Sipariş Ekle"
+            android:textColor="#F5FCCD"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sip_intent_gor_sil_pdf_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sip_ekle_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/radus_button"
+
+        android:text="Diğer Sipariş İşlemleri"
+        android:textColor="#F5FCCD"
+        app:backgroundTint="@null" />
+
+
+</RelativeLayout>

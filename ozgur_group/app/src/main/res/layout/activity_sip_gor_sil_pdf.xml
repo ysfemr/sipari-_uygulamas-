@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sip_gor_pdf_sil"
+    android:background="@drawable/layout"
+    android:layout_centerInParent="true">
+
+    <Button
+        android:id="@+id/sip_info_gor_sil_pdf_but"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/info"
+        app:backgroundTint="@null"
+        android:layout_alignRight="@id/sip_gor_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/sip_gor_lay"
+        android:layout_width="400dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/radus_layout"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <Spinner
+            android:id="@+id/view_sip_sipin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radus_button"
+            android:foregroundGravity="center"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/view_sip_spes_spin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radus_button"
+            android:foregroundGravity="center"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/viewer_but"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radus_button"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Sipariş Görüntüle"
+            android:textColor="#F5FCCD"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sip_pdf_lay"
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/radus_layout"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/sip_gor_lay"
+        >
+
+        <EditText
+            android:id="@+id/pdf_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/radus_button"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="PDF Adını Giriniz"
+            android:inputType="text"
+            android:textColor="#F5FCCD" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:background="@drawable/radus_layout"
+            android:foregroundGravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pdf_data_save_but"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radus_button"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="PDF Verilerini Kaydet"
+                android:textColor="#F5FCCD"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/create_pdf_but"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radus_button"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="PDF Oluştur"
+                android:textColor="#F5FCCD"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sip_sil_lay"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/radus_layout"
+        android:visibility="visible"
+        android:layout_below="@id/sip_pdf_lay"
+        >
+
+        <Spinner
+            android:id="@+id/sip_sil_spin"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radus_button"
+            android:foregroundGravity="center"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/sip_sil_but"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:background="@drawable/delete"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:textColor="#D14D72"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
